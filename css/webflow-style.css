@@ -526,16 +526,7 @@ label {
   display: block;
 }
 
-.w-input:-moz-placeholder, .w-select:-moz-placeholder {
-  color: #999;
-}
-
-.w-input::-moz-placeholder, .w-select::-moz-placeholder {
-  color: #999;
-  opacity: 1;
-}
-
-.w-input::-webkit-input-placeholder, .w-select::-webkit-input-placeholder {
+.w-input::placeholder, .w-select::placeholder {
   color: #999;
 }
 
@@ -4359,7 +4350,6 @@ img {
 .body-5 {
   background-color: #fafafa;
   background-image: url("../images/mandala.jpeg");
-  background-position: 50%;
   background-size: cover;
   flex-flow: wrap;
   justify-content: center;
@@ -4374,6 +4364,9 @@ img {
 
 .xtalp {
   color: #000;
+  text-align: left;
+  overflow-wrap: anywhere;
+  flex-flow: column;
   flex: 0 auto;
   align-self: stretch;
   max-width: none;
@@ -4381,6 +4374,7 @@ img {
   font-size: 21px;
   line-height: 36px;
   text-decoration: none;
+  display: block;
 }
 
 .xtalp.xtalpunderlined {
@@ -4410,6 +4404,14 @@ img {
   background-color: #f1f1f1;
   border-radius: 20px;
   padding: 20px;
+}
+
+.xtalp.small {
+  font-size: 16px;
+}
+
+.xtalp.centered {
+  text-align: center;
 }
 
 .xtalcontainer {
@@ -4503,6 +4505,7 @@ img {
   text-align: center;
   border-radius: 20px;
   align-self: center;
+  margin-bottom: 20px;
   padding: 20px;
   font-size: 23px;
   line-height: 30px;
@@ -4769,8 +4772,8 @@ img {
 }
 
 .block {
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   border: 1px none var(--bl);
   background-color: #fff;
   border-radius: 20px;
@@ -4788,6 +4791,7 @@ img {
 .imagesmall {
   align-self: center;
   max-width: 50%;
+  margin-bottom: 20px;
 }
 
 .claim-logo {
@@ -4850,6 +4854,66 @@ img {
   font-style: normal;
   font-weight: 600;
   text-decoration: none;
+}
+
+.heading-27, .heading-28 {
+  text-align: center;
+}
+
+.xtalh3.centered {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.paragraph-15 {
+  text-align: left;
+  flex-flow: column;
+  align-self: center;
+  max-width: 80%;
+  font-size: 18px;
+  display: flex;
+}
+
+.div-block-31 {
+  align-self: center;
+}
+
+.xtaldiv {
+  grid-column-gap: 14px;
+  grid-row-gap: 14px;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  flex-flow: column;
+  align-self: center;
+  padding: 15px;
+  display: flex;
+}
+
+.xtallink {
+  font-size: 15px;
+}
+
+.link-4 {
+  align-self: center;
+  font-size: 13px;
+}
+
+.div-block-32 {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex-flow: column;
+  padding-left: 60px;
+  display: flex;
+}
+
+.bold-text-4, .bold-text-5 {
+  font-family: Montserrat, sans-serif;
+}
+
+.container-16, .section-16 {
+  flex-flow: column;
+  display: flex;
 }
 
 @media screen and (max-width: 991px) {
